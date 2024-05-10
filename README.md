@@ -20,11 +20,11 @@ get the correct words for the decoded sentence. It is then returned and displaye
 ## Input files  
 The input is a .txt file made of however many lines, each starting with a number, followed by a space, and a word.  
 E.g.:  
-| 1 love  
-| 23 cats  
-| 5 boats  
+|   1 love  
+|   23 cats  
+|   5 boats  
 The code is made by constructing a pyramid of these lines, sorting them, and taking the last of each row. Then, adding those corresponding words together.  
 The above example would look like this:  
-|   1  
-| 5  23  
+|     1  
+|   5  23  
 The last of each row would be 1 and 23, making the decoded message: "love cats."
