@@ -27,4 +27,4 @@ The decoded message is found by constructing a pyramid of these lines, sorting t
 The above example would look like this:  
 |     1  
 |   5  23  
-The right-most numbers of each row would are 1 and 23, making the decoded message: "love cats."
+The right-most numbers of each row are 1 and 23, making the decoded message: "love cats."
