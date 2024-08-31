@@ -15,7 +15,7 @@ std::vector<std::string> readFile(const std::string &fileName) {
     // Constructor opens file
     std::ifstream file(fileName);
     if (!file.is_open()) {
-        std::cout << "Problem opening file. Check file name and if it exists inside this directory." << std::endl;
+        std::cout << "Problem opening input file. Check the file name and if it exists inside this directory." << std::endl;
         file.close();
         return fullLines;
     }
@@ -87,7 +87,7 @@ std::string decode(const std::string &message_file) {
 
 int main (int argc, char* argv[]) {
     if (argc != 2) {
-        std::cout << "Invalid number of args. Enter only the input file name." << std::endl;
+        std::cout << "Invalid number of args. Enter only the input file name, including the file extension." << std::endl;
         return 0;
     }
 
