@@ -28,3 +28,5 @@ The above example would look like this:
 |     1  
 |   5  23  
 The right-most numbers of each row are 1 and 23, making the decoded message: "love cats."
+
+Please note: the test files provided do not necessarily contain an intelligble message, they were merely used to compare to an answer key for testing purposes.
