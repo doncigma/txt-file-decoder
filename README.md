@@ -1,6 +1,6 @@
 ## Decoder  
 ### Description  
-This program takes in an encoded .txt file from the console and decodes it. This is done using two functions: decode() and readFile(). 
+This program takes in an encoded .txt file from the console and decodes it (the input file encoding is shown in more detail at the bottom of this doc). This is done using two functions: decode() and readFile(). 
 I chose to split them up to compartmentalize the code, so as to make debugging easier and make it more readable. A three function approach 
 is also possible seen in 'old-main.ccp' and is even more concise.  
 
@@ -18,13 +18,13 @@ as all the hard work was done before. Decoding simply consists of going through 
 get the correct words for the decoded sentence. It is then returned and displayed on the console.  
 
 ### Input files  
-The input is a .txt file made of however many lines, each starting with a number, followed by a space, and a word.  
+The input is a .txt file made of N lines, each starting with a number, followed by a space, and a word.
 E.g.:  
 |   1 love  
 |   23 cats  
 |   5 boats  
-The code is made by constructing a pyramid of these lines, sorting them, and taking the last of each row. Then, adding those corresponding words together.  
+The decoded message is found by constructing a pyramid of these lines, sorting them, and taking the right-most number of each row, then adding those corresponding words together.  
 The above example would look like this:  
 |     1  
 |   5  23  
-The last of each row would be 1 and 23, making the decoded message: "love cats."
+The right-most numbers of each row would are 1 and 23, making the decoded message: "love cats."
