@@ -2,7 +2,7 @@
 ### Description  
 This program takes in an encoded .txt file from the console and decodes it (the input file encoding is shown in more detail at the bottom of this doc). This is done using two functions: decode() and readFile(). 
 I chose to split them up to compartmentalize the code, so as to make debugging easier and make it more readable. A three function approach 
-is also possible seen in 'old-main.ccp' and is even more concise.  
+is also possible as seen in 'main-split.ccp'.  
 
 ### readFile()  
 First, readFile() does exactly what it sounds like it does: takes in the const reference of a file name, opens a file stream to it, 
